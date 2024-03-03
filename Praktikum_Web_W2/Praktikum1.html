@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage DATA ENTRY</title>
+</head>
+<body>
+  <h1>Homepage DATA ENTRY</h1>
+  <hr>
+
+  <form action="submit.php" method="post">
+    <h2>Informasi Pribadi</h2>
+    <ul>
+      <li>
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" required>
+      </li>
+      <li>
+        <label for="nrp">NRP:</label>
+        <input type="text" name="nrp" id="nrp" required>
+      </li>
+      <li>
+        <label for="kelas">Kelas:</label>
+        <input type="text" name="kelas" id="kelas" required>
+      </li>
+      <li>
+        <label>Jenis Kelamin:</label>
+        <br>
+        <input type="radio" name="jenis_kelamin" value="pria" id="pria" required>
+        <label for="pria">Pria</label>
+        <input type="radio" name="jenis_kelamin" value="wanita" id="wanita" required>
+        <label for="wanita">Wanita</label>
+      </li>
+      <li>
+        <label for="agama">Agama:</label>
+        <select name="agama" id="agama" required>
+          <option value="">Pilih Agama</option>
+          <option value="islam">Islam</option>
+          <option value="kristen">Kristen</option>
+          <option value="hindu">Hindu</option>
+          <option value="budha">Buddha</option>
+        </select>
+      </li>
+      <li>
+        <label for="tempat_lahir">Tempat/Tanggal Lahir:</label>
+        <input type="text" name="tempat_lahir" id="tempat_lahir" required> /
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+      </li>
+      <li>
+        <label for="alamat">Alamat:</label>
+        <br>
+        <textarea name="alamat" id="alamat" rows="4" cols="50" required></textarea>
+      </li>
+    </ul>
+
+    <h2>Riwayat Pendidikan</h2>
+    <ul>
+      <li>
+        <label for="sd">A. SD:</label>
+        <input type="text" name="sd" id="sd" required>
+      </li>
+      <li>
+        <label for="smp">B. SMP:</label>
+        <input type="text" name="smp" id="smp" required>
+      </li>
+      <li>
+        <label for="sma">C. SMA:</label>
+        <input type="text" name="sma" id="sma" required>
+      </li>
+    </ul>
+
+    <h2>Kontak</h2>
+    <ul>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      </li>
+      <li>
+        <label for="homepage">Homepage:</label>
+        <input type="text" name="homepage" id="homepage">
+      </li>
+    </ul>
+
+    <h2>Hobby & Interest</h2>
+    <ul>
+      <li>
+        <label for="hobby">Hobby:</label>
+        <br>
+        <textarea name="hobby" id="hobby" rows="4" cols="50"></textarea>
+      </li>
+      <li>
+        <label>Interest:</label>
+        <br>
+        <input type="checkbox" name="interest[]" value="komputer" id="komputer">
+        <label for="komputer">Komputer</label>
+        <input type="checkbox" name="interest[]" value="sport" id="sport">
+        <label for="sport">Sport</label>
+        <br>
+        <input type="checkbox" name="interest[]" value="travelling" id="travelling">
+        <label for="travelling">Travelling</label>
+        <input type="checkbox" name="interest[]" value="writing" id="writing">
+        <label for="writing">Writing</label>
+      </li>
+    </ul>
+
+    <!-- Buttons -->
+    <button type="submit">Simpan</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
